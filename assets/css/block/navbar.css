@@ -8,8 +8,6 @@
 }
 
 .custom-navbar .container {
-	display: flex;
-	justify-content: flex-end;
 	max-width: 92.75rem;
 	padding: 0px;
 }
@@ -23,13 +21,7 @@
 }
 
 .custom-navbar .custom-navbar__nav {
-	display: flex;
-	justify-content: space-around;
-	list-style: none;
-	margin: 0px;
 	max-width: 68.5rem;
-	padding: 0px;
-	width: 100%;
 }
 
 .custom-navbar .custom-navbar__nav li {
@@ -68,7 +60,6 @@
 
 @media (min-width: 992px) {
 	.custom-navbar .custom-navbar__nav {
-		justify-content: space-between;
 		margin-left: 13rem;
 	}
 
