@@ -1,0 +1,86 @@
+.custom-navbar {
+	background-color: #0b0b09;
+	margin-top: 4.875rem;
+	/* padding-right: calc(15.625rem - 2rem); */
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.custom-navbar .container {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 92.75rem;
+	padding: 0px;
+}
+
+.custom-navbar .custom-navbar__logo {
+	left: 2.25rem;
+	position: absolute;
+	top: -4.125rem;
+	width: 8.875rem;
+	z-index: 10;
+}
+
+.custom-navbar .custom-navbar__nav {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0px;
+	max-width: 68.5rem;
+	padding: 0px;
+	width: 100%;
+}
+
+.custom-navbar .custom-navbar__nav li {
+	display: flex;
+}
+
+.custom-navbar .custom-navbar__nav li a {
+	color: #fff;
+	font-size: 0.9375rem;
+	font-weight: 600;
+	letter-spacing: 0.09375rem;
+	padding-bottom: 1.125rem;
+	padding-left: 0.75rem;
+	padding-top: 1.625rem;
+	padding-right: 0.75rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.custom-navbar .custom-navbar__nav li a::after {
+	background-color: #fff;
+	content: "";
+	display: block;
+	height: 0.25rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.4s ease;
+	width: 2.5rem;
+}
+
+.custom-navbar .custom-navbar__nav li a:hover::after,
+.custom-navbar .custom-navbar__nav li a:focus::after {
+	transform: scaleX(1);
+}
+
+@media (min-width: 992px) {
+	.custom-navbar .custom-navbar__nav {
+		justify-content: space-between;
+		margin-left: 13rem;
+	}
+
+	.custom-navbar .custom-navbar__nav li a {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.custom-navbar .custom-navbar__nav li a {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
