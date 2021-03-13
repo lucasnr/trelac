@@ -1,7 +1,44 @@
 .banner {
 	background-image: url(../../img/banner@2x.png);
 	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	height: 66.5rem;
+	padding-bottom: 4.25rem;
+}
+
+.banner .banner__picture {
+	max-width: 64.625rem;
+	width: 85%;
+	z-index: 1;
+}
+
+.banner .banner__picture img {
+	width: 100%;
+}
+
+.banner .banner__content {
+	z-index: 5;
+}
+
+.banner .subtitle {
+	margin-bottom: 1.375rem;
+	margin-top: 0.25rem;
+}
+
+@media (min-width: 992px) {
+	.banner {
+		height: 66.5rem;
+	}
+
+	.banner .banner__picture {
+		left: 50%;
+		position: absolute;
+		top: 12rem;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.banner .banner__picture {
+		left: 49%;
+	}
 }

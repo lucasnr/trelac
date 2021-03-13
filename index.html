@@ -20,8 +20,10 @@
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 	</head>
 	<body>
-		<header class="banner">
-			<nav class="custom-navbar font-1">
+		<header
+			class="banner d-flex flex-column align-items-center position-relative"
+		>
+			<nav class="custom-navbar font-1 w-100">
 				<img
 					src="./assets/img/logo.svg"
 					alt="Logomarca Trelac"
@@ -50,6 +52,30 @@
 					</ul>
 				</div>
 			</nav>
+
+			<picture class="banner__picture">
+				<source
+					media="(min-width: 992px)"
+					srcset="./assets/img/queijo-mussarela@2x.png"
+				/>
+				<source
+					media="(min-width: 576px)"
+					srcset="./assets/img/queijo-mussarela-sem-folha@2x.png"
+				/>
+				<img
+					src="./assets/img/queijo-mussarela-sem-folha.png"
+					alt="Queijo mussarela"
+					class="img-fluid"
+				/>
+			</picture>
+
+			<div
+				class="banner__content mt-5 mt-lg-auto px-3 d-flex flex-column align-items-center"
+			>
+				<h2 class="title">Feito com leite de qualidade</h2>
+				<h3 class="subtitle">Fresquinho e saboroso</h3>
+				<a href="#" class="button">Saiba mais</a>
+			</div>
 		</header>
 	</body>
 </html>
