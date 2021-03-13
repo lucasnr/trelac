@@ -54,6 +54,31 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "UT Saturday";
+	src: url(../font/UT-Saturday/UT-Saturday-Light.otf) format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "UT Saturday";
+	src: url(../font/UT-Saturday/UT-Saturday-Regular.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "UT Saturday";
+	src: url(../font/UT-Saturday/UT-Saturday-Bold.otf) format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+
 .font-1 {
 	font-family: "Goldplay", sans-serif;
+}
+
+.font-2 {
+	font-family: "UT Saturday", sans-serif;
 }
