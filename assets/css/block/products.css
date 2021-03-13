@@ -20,52 +20,6 @@
 	height: 29.875rem;
 }
 
-.products .swiper-slide {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
-
-.products .swiper-container-horizontal > .swiper-pagination-bullets {
-	align-items: center;
-	bottom: 0px;
-	display: flex;
-	height: 0.875rem;
-	justify-content: center;
-}
-
-.products .swiper-pagination-bullet {
-	background-color: transparent;
-	border: 0.0625rem solid #fff !important;
-	height: 0.875rem;
-	margin: 0px 0.4375rem !important;
-	opacity: 1;
-	outline: none !important;
-	width: 0.875rem;
-}
-
-.products .swiper-pagination-bullet-active {
-	background: #fff;
-}
-
-.products .swiper-button-prev::after,
-.products .swiper-button-next::after {
-	color: #cf1208;
-	font-size: 1.6rem;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	outline: none;
-}
-
-.products .swiper-button-prev::after {
-	content: "\f053";
-}
-
-.products .swiper-button-next::after {
-	content: "\f054";
-}
-
 .products picture {
 	max-width: 80%;
 }
@@ -79,13 +33,9 @@
 	font-size: 1.125rem;
 	font-weight: 600;
 	margin-bottom: 0.75rem;
+	padding: 0px 0.875rem;
+	text-align: center;
 	text-transform: uppercase;
-}
-
-.products .button {
-	max-width: 12.25rem;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
 }
 
 .half {

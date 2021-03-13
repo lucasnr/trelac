@@ -23,6 +23,12 @@
 	margin-top: 0.25rem;
 }
 
+.banner .button {
+	max-width: 15.5rem;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+}
+
 @media (min-width: 992px) {
 	.banner {
 		height: 66.5rem;
