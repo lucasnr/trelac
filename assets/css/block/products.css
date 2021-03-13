@@ -1,0 +1,112 @@
+.products {
+	background-color: #d3d3d3;
+	padding-bottom: 1.75rem;
+	padding-top: 3.5rem;
+}
+
+.products .container {
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: none;
+	padding: 0px;
+	width: 100%;
+}
+
+.products .title {
+	margin-bottom: 0.875rem;
+}
+
+.products .swiper-container {
+	height: 29.875rem;
+}
+
+.products .swiper-slide {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.products .swiper-container-horizontal > .swiper-pagination-bullets {
+	align-items: center;
+	bottom: 0px;
+	display: flex;
+	height: 0.875rem;
+	justify-content: center;
+}
+
+.products .swiper-pagination-bullet {
+	background-color: transparent;
+	border: 0.0625rem solid #fff !important;
+	height: 0.875rem;
+	margin: 0px 0.4375rem !important;
+	opacity: 1;
+	outline: none !important;
+	width: 0.875rem;
+}
+
+.products .swiper-pagination-bullet-active {
+	background: #fff;
+}
+
+.products .swiper-button-prev::after,
+.products .swiper-button-next::after {
+	color: #cf1208;
+	font-size: 1.6rem;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	outline: none;
+}
+
+.products .swiper-button-prev::after {
+	content: "\f053";
+}
+
+.products .swiper-button-next::after {
+	content: "\f054";
+}
+
+.products picture {
+	max-width: 80%;
+}
+
+.products img {
+	height: 23.125rem;
+	object-fit: contain;
+}
+
+.products .product-title {
+	font-family: "Goldplay", sans-serif;
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+	text-transform: uppercase;
+}
+
+.products .button {
+	max-width: 12.25rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.half {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.half {
+		width: 50%;
+	}
+
+	.products .container {
+		margin-left: auto;
+		max-width: 38.75rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.products {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}

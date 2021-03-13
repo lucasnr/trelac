@@ -14,10 +14,23 @@
 			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
 			crossorigin="anonymous"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script
+			src="https://kit.fontawesome.com/dd5260fcce.js"
+			crossorigin="anonymous"
+		></script>
+
 		<link rel="stylesheet" href="./assets/css/fonts.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link rel="stylesheet" href="./assets/css/block/banner.css" />
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
+		<link rel="stylesheet" href="./assets/css/block/products.css" />
 	</head>
 	<body>
 		<header
@@ -77,5 +90,108 @@
 				<a href="#" class="button">Saiba mais</a>
 			</div>
 		</header>
+
+		<main>
+			<div class="d-md-flex">
+				<section class="products half">
+					<div class="container">
+						<h2 class="title">Nossos produtos</h2>
+
+						<!-- Swiper -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture>
+										<img src="./assets/img/cup@2x.png" class="img-fluid" />
+									</picture>
+									<h4 class="product-title">Manteiga Extra 500g</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source
+											media="(min-width: 576px)"
+											srcset="./assets/img/queijo-mussarela-sem-folha@2x.png"
+										/>
+										<img
+											src="./assets/img/queijo-mussarela-sem-folha.png"
+											class="img-fluid"
+										/>
+									</picture>
+									<h4 class="product-title">Queijo Mussarela</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<img
+											src="./assets/img/queijo-prato.png"
+											class="img-fluid"
+										/>
+									</picture>
+									<h4 class="product-title">Queijo Prato</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source
+											media="(min-width: 576px)"
+											srcset="./assets/img/queijo-mussarela-sem-folha@2x.png"
+										/>
+										<img
+											src="./assets/img/queijo-mussarela-sem-folha.png"
+											class="img-fluid"
+										/>
+									</picture>
+									<h4 class="product-title">Queijo Mussarela</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<img src="./assets/img/cup@2x.png" class="img-fluid" />
+									</picture>
+									<h4 class="product-title">Manteiga Extra 500g</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source
+											media="(min-width: 576px)"
+											srcset="./assets/img/queijo-mussarela-sem-folha@2x.png"
+										/>
+										<img
+											src="./assets/img/queijo-mussarela-sem-folha.png"
+											class="img-fluid"
+										/>
+									</picture>
+									<h4 class="product-title">Queijo Mussarela</h4>
+									<a href="#" class="button">Saiba mais</a>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</section>
+				<section class="half"></section>
+			</div>
+		</main>
+
+		<script>
+			const swiper = new Swiper(".swiper-container", {
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
 	</body>
 </html>
