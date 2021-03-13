@@ -38,15 +38,7 @@
 	text-transform: uppercase;
 }
 
-.half {
-	width: 100%;
-}
-
 @media (min-width: 768px) {
-	.half {
-		width: 50%;
-	}
-
 	.products .container {
 		margin-left: auto;
 		max-width: 38.75rem;
