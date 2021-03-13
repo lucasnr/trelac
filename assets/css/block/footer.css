@@ -1,0 +1,118 @@
+.footer .footer__social {
+	background-color: #f0d12f;
+	padding-bottom: 3.625rem;
+	padding-top: 3.125rem;
+}
+
+.footer .footer__social .container {
+	max-width: 78.375rem;
+}
+
+.footer .footer__social__content {
+	position: relative;
+	padding-right: 1.5rem;
+}
+
+.footer .footer__social .logo {
+	color: #f0d12f;
+	left: 0px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 10.375rem;
+}
+
+.footer .footer__social .footer__social__title {
+	font-size: 1.375rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+
+.footer .footer__social .footer__social__subtitle {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.footer .footer__social .footer__social__subtitle a {
+	color: inherit;
+}
+
+.footer .footer__social ul,
+.footer .footer__social ul li {
+	display: flex;
+}
+
+.footer .footer__social ul li a {
+	align-items: center;
+	border: 0.125rem solid currentColor;
+	border-radius: 50%;
+	display: flex;
+	color: inherit;
+	font-size: 1.625rem;
+	height: 2.875rem;
+	justify-content: center;
+	margin: 0px 0.375rem;
+	text-decoration: none;
+	width: 2.875rem;
+}
+
+.footer .footer__social ul li a svg {
+	height: 1.625rem;
+	width: 1.625rem;
+}
+
+.footer .footer__social ul li a svg path {
+	fill: currentColor;
+}
+
+.footer .footer__navbar {
+	padding: 4.625rem 0.75rem;
+}
+
+.footer .footer__navbar .container {
+	max-width: 74rem;
+}
+
+.footer .footer__navbar .footer__navbar__title {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.footer .footer__navbar ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.footer .footer__navbar .footer__navbar__title,
+.footer .footer__navbar ul {
+	color: #5e5e5e;
+	margin: 0px;
+	line-height: 1.875rem;
+}
+
+.footer .footer__navbar ul li {
+	display: flex;
+}
+
+.footer .footer__navbar ul li a {
+	color: inherit;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.footer .footer__navbar ul li a:hover {
+	color: #232323;
+}
+
+@media (min-width: 576px) {
+	.footer .footer__social ul li a {
+		margin: 0px 0.625rem;
+	}
+
+	.footer .footer__social__navbar,
+	.footer .footer__social__content {
+		padding-left: calc(10.375rem + 2.5rem);
+	}
+}
