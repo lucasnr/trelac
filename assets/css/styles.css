@@ -11,6 +11,10 @@ main {
 	flex-grow: 1;
 }
 
+main .container {
+	max-width: 78.125rem;
+}
+
 .title {
 	font-size: 1.875rem;
 	font-weight: 700;

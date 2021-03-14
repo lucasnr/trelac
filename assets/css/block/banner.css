@@ -16,6 +16,13 @@
 	z-index: -1;
 }
 
+@media (min-width: 768px) {
+	.banner {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
 @media (min-width: 992px) {
 	.banner {
 		height: 39.5rem;

@@ -1,0 +1,18 @@
+.banner .banner__background {
+	object-position: center;
+}
+
+main {
+	padding-bottom: 5.625rem;
+	padding-top: 4.125rem;
+}
+
+main .button {
+	margin-top: 2.25rem;
+}
+
+@media (min-width: 992px) {
+	.banner {
+		height: 31rem;
+	}
+}
