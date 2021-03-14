@@ -26,8 +26,7 @@
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
 		<link rel="stylesheet" href="./assets/css/block/social-nav.css" />
-		<link rel="stylesheet" href="./assets/css/receita.css" />
-		<link rel="stylesheet" href="./assets/css/block/receitas/recipe.css" />
+		<link rel="stylesheet" href="./assets/css/contato.css" />
 	</head>
 	<body>
 		<header
@@ -71,265 +70,76 @@
 				<i class="fas fa-bars"></i>
 			</button>
 
-			<img src="./assets/img/receitas/banner.png" class="banner__background" />
-
-			<h2 class="banner__title my-auto text-center pt-4 pt-sm-0 font-1">
-				Macarrão com Queijo
-				<br class="d-none d-sm-block" />
-				e Coentro
-			</h2>
+			<img src="./assets/img/banners/default.png" class="banner__background" />
 		</header>
 
 		<main>
 			<div class="container">
-				<section class="lists">
-					<div class="row gy-5 g-xxl-5">
-						<div class="col-12 col-xl-2">
-							<a href="./receitas.html" class="arrow-back">
-								<svg viewBox="0 0 38.681 23.631">
-									<clipPath>
-										<rect fill="none" />
-									</clipPath>
-									<g>
-										<path
-											d="M11.927,23.037.626,11.74l11.3-11.3"
-											transform="translate(0.108 0.076)"
-											fill="none"
-											stroke="#161615"
-											stroke-linecap="round"
-											stroke-miterlimit="10"
-											stroke-width="0.885"
-										/>
-										<line
-											x2="37.429"
-											transform="translate(0.733 11.816)"
-											fill="none"
-											stroke="#161615"
-											stroke-linecap="round"
-											stroke-miterlimit="10"
-											stroke-width="0.885"
-										/>
-									</g>
-								</svg>
-								<span class="font-1">Receitas</span>
-							</a>
+				<h2 class="title">Fale conosco</h2>
+				<h3 class="subtitle font-1">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor
+					<br class="d-none d-sm-block" />
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud
+				</h3>
+
+				<form>
+					<div class="row gy-4 font-1">
+						<div class="col-12 col-sm-6">
+							<label for="nome">Nome:</label>
+							<input type="text" class="form-control" id="nome" />
+						</div>
+						<div class="col-12 col-sm-6">
+							<label for="email">E-mail:</label>
+							<input type="email" class="form-control" id="email" />
 						</div>
 
-						<div class="col-md-6 col-xl">
-							<section
-								class="ingredients d-flex flex-column align-items-center"
-							>
-								<header class="text-center">
-									<img
-										src="./assets/img/receitas/ingredientes.svg"
-										alt="Ingredientes"
-										class="list__icon"
-									/>
-									<h3 class="list__title">
-										Lista de
-										<strong class="text-uppercase d-block">
-											Ingredientes
-										</strong>
-									</h3>
-								</header>
-
-								<ul class="list-unstyled mb-0 d-inline-block">
-									<li>1 caixinha de creme de leite</li>
-									<li>125 gramas de queijo parmesão ralado</li>
-									<li>125 gramas de queijo muçarela ralado</li>
-									<li>250 gramas de polvilho doce</li>
-									<li>Sal a gosto</li>
-									<li>Molho de tomate a gosto</li>
-									<li>Muçarela ralada a gosto</li>
-									<li>Orégano a gosto</li>
-								</ul>
-							</section>
+						<div class="col-12 col-sm-4">
+							<label for="telefone">Telefone:</label>
+							<input type="tel" class="form-control" id="telefone" />
+						</div>
+						<div class="col-8 col-sm-5">
+							<label for="cidade">Cidade:</label>
+							<input type="text" class="form-control" id="cidade" />
+						</div>
+						<div class="col-4 col-sm-3">
+							<label for="uf">UF:</label>
+							<input type="text" class="form-control" id="uf" />
 						</div>
 
-						<div class="col-md-6 col-xl">
-							<section class="preparation mx-auto">
-								<header class="text-center">
-									<img
-										src="./assets/img/receitas/modo-de-preparo.svg"
-										alt="Modo de Preparo"
-										class="list__icon"
-									/>
-									<h3 class="list__title">
-										Modo de
-										<strong class="d-block">Preparo</strong>
-									</h3>
-								</header>
-
-								<ol class="list-unstyled mb-0">
-									<li>
-										<strong>1.</strong>
-										Numa tigela, coloque 1 caixinha de creme de leite, 125
-										gramas de queijo parmesão ralado, 125 gramas de queijo
-										muçarela ralado, 250 gramas de polvilho doce e sal a gosto e
-										amasse bem até soltar das mãos.
-									</li>
-									<li>
-										<strong>2.</strong>
-										Divida a massa em 8 bolinhas. Pegue cada bolinha, coloque
-										entre dois sacos plásticos e abra espalhando a massa com as
-										mãos.
-									</li>
-									<li>
-										<strong>3.</strong>
-										Coloque cada disco numa frigideira untada com azeite, em
-										fogo baixo, e deixe por mais ou menos 2 minutos ou até
-										firmar.
-									</li>
-									<li>
-										<strong>4.</strong>
-										Vire o disco deixe ficar crocante. Mais ou menos 2 minutos.
-										Pincele um pouco de molho de tomate, uma porção de muçarela
-										e orégano, tampe a frigideira para derreter o queijo. Retire
-										do fogo e sirva em seguida.
-									</li>
-								</ol>
-							</section>
+						<div class="col-12">
+							<label for="mensagem">Mensagem:</label>
+							<textarea
+								id="mensagem"
+								cols="30"
+								rows="5"
+								class="form-control"
+							></textarea>
 						</div>
 					</div>
-				</section>
 
-				<div class="d-md-flex justify-content-center">
-					<section class="share">
-						<div class="d-flex flex-column flex-md-row align-items-center">
-							<h2 class="share__title text-center mb-4 mb-md-0">
-								Compartilhe a receita
-							</h2>
-							<ul class="social-nav">
-								<li>
-									<a href="#" target="_blank">
-										<svg viewBox="0 0 25.727 25.727">
-											<g transform="translate(-1279.436 -4076.273)">
-												<path
-													d="M399.236,169.161a5.23,5.23,0,1,0,5.23,5.23A5.23,5.23,0,0,0,399.236,169.161Z"
-													transform="translate(893.063 3914.745)"
-												/>
-												<path
-													d="M407.659,161.329a5.193,5.193,0,0,0-2.977-2.978,8.694,8.694,0,0,0-2.914-.54c-1.654-.075-2.151-.091-6.34-.091s-4.685.016-6.34.091a8.689,8.689,0,0,0-2.913.54,5.2,5.2,0,0,0-2.978,2.978,8.685,8.685,0,0,0-.54,2.913c-.075,1.654-.091,2.151-.091,6.34s.016,4.686.091,6.34a8.689,8.689,0,0,0,.54,2.913,5.2,5.2,0,0,0,2.978,2.978,8.689,8.689,0,0,0,2.913.54c1.654.075,2.151.091,6.34.091s4.686-.016,6.34-.091a8.693,8.693,0,0,0,2.914-.54,5.193,5.193,0,0,0,2.977-2.978,8.672,8.672,0,0,0,.54-2.913c.075-1.654.091-2.151.091-6.34s-.016-4.686-.091-6.34A8.668,8.668,0,0,0,407.659,161.329ZM395.428,178.64a8.058,8.058,0,1,1,8.058-8.058A8.057,8.057,0,0,1,395.428,178.64Zm8.376-14.551a1.883,1.883,0,1,1,1.883-1.883A1.883,1.883,0,0,1,403.8,164.089Z"
-													transform="translate(896.872 3918.554)"
-												/>
-											</g>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#" target="_blank">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" target="_blank">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" target="_blank">
-										<svg viewBox="0 0 23.769   23.769">
-											<path
-												d="M21.885,962.362A11.883,11.883,0,0,0,12.1,980.987a.594.594,0,0,1,.074.511l-1.207,4.039,3.955-1.365a.594.594,0,0,1,.511.065,11.888,11.888,0,1,0,6.453-21.875Zm-4.865,5.181,2.163,3.575-.9.891a.594.594,0,0,0-.093.715,11.716,11.716,0,0,0,5.283,5.237.594.594,0,0,0,.659-.121l.956-.956,3.491,2.182a3.3,3.3,0,0,1-1.467,1.69,3.562,3.562,0,0,1-2.414.223,13,13,0,0,1-5.942-3.723,13.248,13.248,0,0,1-3.612-6.007,3.489,3.489,0,0,1,.241-2.358,3.008,3.008,0,0,1,1.634-1.346Z"
-												transform="translate(-10 -962.362)"
-												fill-rule="evenodd"
-											/>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a href="#" target="_blank">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</section>
-				</div>
+					<div class="d-flex justify-content-end">
+						<button type="submit" class="button">Enviar</button>
+					</div>
+				</form>
 
-				<section class="related">
-					<h2 class="title text-capitalize">Receitas Relacionadas</h2>
-					<div class="row gy-4 g-sm-3 g-md-4 g-xxl-5">
-						<div class="col-sm-6 col-lg-4 col-xl-3">
-							<a href="./receita.html" class="recipe">
-								<img
-									src="./assets/img/receitas/macarrao-com-queijo.png"
-									alt="Macarrão com Queijo e Coentro"
-								/>
-								<header class="recipe__header">
-									<div class="recipe__portions">
-										<strong>12</strong>
-										<span>Porções</span>
-									</div>
-								</header>
-								<h3 class="recipe__title font-1">
-									Macarrão com Queijo
-									<br />
-									e Coentro
-								</h3>
-							</a>
+				<section class="contact-info font-1">
+					<div class="d-flex flex-column align-items-center">
+						<div
+							class="contact-info__icon d-flex align-items-center justify-content-center"
+						>
+							<i class="fas fa-phone-alt"></i>
 						</div>
-						<div class="col-sm-6 col-lg-4 col-xl-3">
-							<a href="./receita.html" class="recipe">
-								<img
-									src="./assets/img/receitas/massa-de-pizza.png"
-									alt="Massa de Pizza de Pão de Queijo"
-								/>
-								<header class="recipe__header">
-									<div class="recipe__portions">
-										<strong>12</strong>
-										<span>Porções</span>
-									</div>
-								</header>
-								<h3 class="recipe__title font-1">
-									Massa de Pizza de
-									<br />
-									Pão de Queijo
-								</h3>
-							</a>
-						</div>
-						<div class="col-sm-6 col-lg-4 col-xl-3">
-							<a href="./receita.html" class="recipe">
-								<img
-									src="./assets/img/receitas/sufle-de-cenoura.png"
-									alt="Sufle de Cenoura e Queijo Parmesão"
-								/>
-								<header class="recipe__header">
-									<div class="recipe__portions">
-										<strong>12</strong>
-										<span>Porções</span>
-									</div>
-								</header>
-								<h3 class="recipe__title font-1">
-									Sufle de Cenoura e
-									<br />
-									Queijo Parmesão
-								</h3>
-							</a>
-						</div>
-						<div class="col-sm-6 col-lg-4 col-xl-3">
-							<a href="./receita.html" class="recipe">
-								<img
-									src="./assets/img/receitas/salada-de-funcho.png"
-									alt="Salada de Funcho c/ Romã e Queijo Coalho Grelhado"
-								/>
-								<header class="recipe__header">
-									<div class="recipe__portions">
-										<strong>12</strong>
-										<span>Porções</span>
-									</div>
-								</header>
-								<h3 class="recipe__title font-1">
-									Salada de Funcho c/ Romã
-									<br />
-									e Queijo Coalho Grelhado
-								</h3>
-							</a>
-						</div>
+						<h3 class="contact-info__phone">(45) 3235-8000</h3>
+
+						<address class="contact-info__address text-center m-0">
+							R. JK, 1016 - Jardim Guarani, Três Barras do Paraná - BR
+							<br class="d-block" />
+							CEP: 85485-000
+						</address>
 					</div>
 				</section>
-
-				<a href="./receitas.html" class="button mx-auto">Ver mais</a>
 			</div>
 		</main>
 
