@@ -34,7 +34,6 @@ main section p strong {
 
 @media (min-width: 576px) {
 	main .title {
-		font-size: 2.8125rem;
 		margin-bottom: 2.5rem;
 	}
 }

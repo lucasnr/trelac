@@ -90,6 +90,12 @@ main .container {
 	width: 100%;
 }
 
+@media (min-width: 576px) {
+	.title {
+		font-size: 2.8125rem;
+	}
+}
+
 @media (min-width: 768px) {
 	.half {
 		width: 50%;
