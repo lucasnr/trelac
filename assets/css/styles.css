@@ -1,7 +1,14 @@
 body {
 	background-color: #e4e4e4;
 	color: #131313;
+	display: flex;
+	flex-direction: column;
 	font-family: "GoldplayAlt", sans-serif;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow: 1;
 }
 
 .title {

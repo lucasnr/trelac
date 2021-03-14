@@ -1,6 +1,5 @@
 .custom-navbar {
 	background-color: #0b0b09;
-	margin-top: 4.875rem;
 	/* padding-right: calc(15.625rem - 2rem); */
 	position: relative;
 	display: flex;
@@ -30,13 +29,13 @@
 
 .custom-navbar .custom-navbar__nav li a {
 	color: #fff;
-	font-size: 0.9375rem;
+	font-size: 0.8125rem;
 	font-weight: 600;
 	letter-spacing: 0.09375rem;
 	padding-bottom: 1.125rem;
-	padding-left: 0.75rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	padding-top: 1.625rem;
-	padding-right: 0.75rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -58,12 +57,55 @@
 	transform: scaleX(1);
 }
 
+@media (max-width: 768px) {
+	.custom-navbar {
+		height: 100%;
+		left: 0;
+		padding: 1rem;
+		position: fixed;
+		top: 0;
+		transform: translateX(100%);
+		transition: transform 0.3s ease;
+		width: 100%;
+		z-index: 50;
+	}
+
+	.custom-navbar.active {
+		transform: translateX(0%);
+	}
+
+	#navbar-toggler {
+		background-color: rgba(255, 255, 255, 0.375);
+		border-radius: 0.25rem;
+		font-size: 1.5rem;
+		height: 2.5rem;
+		position: fixed;
+		right: 1rem;
+		top: 1rem;
+		width: 2.5rem;
+		z-index: 55;
+	}
+
+	.custom-navbar .custom-navbar__nav li a {
+		font-size: 0.9375rem;
+		padding-bottom: 0.75rem;
+		padding-top: 0.75rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.custom-navbar {
+		margin-top: 4.875rem;
+	}
+}
+
 @media (min-width: 992px) {
 	.custom-navbar .custom-navbar__nav {
 		margin-left: 13rem;
 	}
 
 	.custom-navbar .custom-navbar__nav li a {
+		font-size: 0.9375rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
