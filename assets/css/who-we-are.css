@@ -1,0 +1,82 @@
+main {
+	padding-top: 2rem;
+}
+
+main .title {
+	margin-bottom: 8.125rem;
+}
+
+main section {
+	display: flex;
+	flex-direction: column;
+}
+
+main section img {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+main section p {
+	color: #5a5959;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 2.375rem;
+	margin: auto 0px;
+	padding: 1.5rem 1rem;
+}
+
+main section p strong {
+	font-weight: 600;
+	line-height: 2.5rem;
+}
+
+@media (min-width: 576px) {
+	main .title {
+		font-size: 2.8125rem;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		padding-bottom: 8rem;
+	}
+
+	main section p {
+		max-width: 33.5rem;
+		padding: 1rem;
+	}
+
+	main .half:nth-of-type(even) p {
+		margin-left: 3rem;
+		margin-right: auto;
+		text-align: right;
+	}
+
+	main .half:nth-of-type(odd) p {
+		margin-right: 3rem;
+		margin-left: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	main .half:nth-of-type(even) p {
+		margin-left: 6.125rem;
+	}
+
+	main .half:nth-of-type(odd) p {
+		margin-right: 6.125rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	main section p {
+		font-size: 1.75rem;
+		line-height: 3rem;
+	}
+
+	main section p strong {
+		line-height: 3.75rem;
+	}
+}
