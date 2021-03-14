@@ -25,7 +25,7 @@
 		<link rel="stylesheet" href="./assets/css/block/banner.css" />
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
-		<link rel="stylesheet" href="./assets/css/quem-somos.css" />
+		<link rel="stylesheet" href="./assets/css/receitas.css" />
 	</head>
 	<body>
 		<header
@@ -69,48 +69,202 @@
 				<i class="fas fa-bars"></i>
 			</button>
 
-			<img
-				src="./assets/img/banners/quem-somos.png"
-				class="banner__background"
-			/>
+			<img src="./assets/img/banners/receitas.png" class="banner__background" />
+
+			<form class="search mt-auto position-relative w-100 font-1">
+				<input type="text" class="w-100" placeholder="Busque uma receita" />
+				<button type="submit" class="p-0 m-0 border-0 d-flex">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
 		</header>
 
 		<main>
-			<h2 class="title">Quem somos</h2>
+			<div class="container">
+				<a href="#" class="arrow-back">
+					<svg viewBox="0 0 38.681 23.631">
+						<clipPath>
+							<rect fill="none" />
+						</clipPath>
+						<g>
+							<path
+								d="M11.927,23.037.626,11.74l11.3-11.3"
+								transform="translate(0.108 0.076)"
+								fill="none"
+								stroke="#161615"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="0.885"
+							/>
+							<line
+								x2="37.429"
+								transform="translate(0.733 11.816)"
+								fill="none"
+								stroke="#161615"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="0.885"
+							/>
+						</g>
+					</svg>
+					<span class="font-1"> Receitas </span>
+				</a>
 
-			<div class="d-flex flex-wrap align-items-stretch">
-				<section class="half order-1">
-					<p>
-						<strong>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud
-						</strong>
-					</p>
-				</section>
-				<section class="half order-2">
-					<img
-						id="fabrica"
-						src="./assets/img/quem-somos/fabrica.png"
-						alt="Fábrica"
-					/>
-				</section>
-				<section class="half order-4 order-md-3">
-					<img
-						id="funcionarios"
-						src="./assets/img/quem-somos/funcionarios.png"
-						alt="Fábrica"
-					/>
-				</section>
-				<section class="half order-3 order-md-4">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-					</p>
-				</section>
+				<div class="row gy-4 g-sm-3 g-md-4 g-xxl-5">
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/macarrao-com-queijo.png"
+								alt="Macarrão com Queijo e Coentro"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Macarrão com Queijo
+								<br />
+								e Coentro
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/massa-de-pizza.png"
+								alt="Massa de Pizza de Pão de Queijo"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Massa de Pizza de
+								<br />
+								Pão de Queijo
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/sufle-de-cenoura.png"
+								alt="Sufle de Cenoura e Queijo Parmesão"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Sufle de Cenoura e
+								<br />
+								Queijo Parmesão
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/salada-de-funcho.png"
+								alt="Salada de Funcho c/ Romã e Queijo Coalho Grelhado"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Salada de Funcho c/ Romã
+								<br />
+								e Queijo Coalho Grelhado
+							</h3>
+						</a>
+					</div>
+
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/macarrao-com-queijo.png"
+								alt="Macarrão com Queijo e Coentro"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Macarrão com Queijo
+								<br />
+								e Coentro
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/massa-de-pizza.png"
+								alt="Massa de Pizza de Pão de Queijo"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Massa de Pizza de
+								<br />
+								Pão de Queijo
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/sufle-de-cenoura.png"
+								alt="Sufle de Cenoura e Queijo Parmesão"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Sufle de Cenoura e
+								<br />
+								Queijo Parmesão
+							</h3>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 col-xl-3">
+						<a href="./receita.html" class="recipe">
+							<img
+								src="./assets/img/receitas/salada-de-funcho.png"
+								alt="Salada de Funcho c/ Romã e Queijo Coalho Grelhado"
+							/>
+							<header class="recipe__header">
+								<div class="recipe__portions">
+									<strong>12</strong>
+									<span>Porções</span>
+								</div>
+							</header>
+							<h3 class="recipe__title font-1">
+								Salada de Funcho c/ Romã
+								<br />
+								e Queijo Coalho Grelhado
+							</h3>
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 

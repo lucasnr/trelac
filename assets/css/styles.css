@@ -67,6 +67,21 @@ main {
 	fill: currentColor;
 }
 
+.arrow-back {
+	color: #272324 !important;
+	display: flex;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	height: 1.5rem;
+	letter-spacing: 0.09375rem;
+	text-decoration: none;
+}
+
+.arrow-back svg {
+	height: 100%;
+	margin-right: 1rem;
+}
+
 .half {
 	width: 100%;
 }

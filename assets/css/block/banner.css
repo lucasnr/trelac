@@ -1,5 +1,8 @@
 .banner {
 	height: 50vw;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	padding-bottom: 8vw;
 }
 
 .banner .banner__background {
@@ -16,5 +19,6 @@
 @media (min-width: 992px) {
 	.banner {
 		height: 39.5rem;
+		padding-bottom: 5rem;
 	}
 }
