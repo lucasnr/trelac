@@ -15,6 +15,12 @@
 			crossorigin="anonymous"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 		<script
 			src="https://kit.fontawesome.com/dd5260fcce.js"
 			crossorigin="anonymous"
@@ -22,12 +28,13 @@
 
 		<link rel="stylesheet" href="./assets/css/fonts.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/swiper.override.css" />
 		<link rel="stylesheet" href="./assets/css/block/banner.css" />
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
 		<link rel="stylesheet" href="./assets/css/block/social-nav.css" />
-		<link rel="stylesheet" href="./assets/css/block/index/contact.css" />
-		<link rel="stylesheet" href="./assets/css/produtos.css" />
+		<link rel="stylesheet" href="./assets/css/block/index/recipes.css" />
+		<link rel="stylesheet" href="./assets/css/produto.css" />
 	</head>
 	<body>
 		<header
@@ -76,108 +83,246 @@
 
 		<main>
 			<div class="container">
-				<h2 class="title">Produtos</h2>
+				<a href="./produtos.html" class="arrow-back">
+					<svg viewBox="0 0 38.681 23.631">
+						<clipPath>
+							<rect fill="none" />
+						</clipPath>
+						<g>
+							<path
+								d="M11.927,23.037.626,11.74l11.3-11.3"
+								transform="translate(0.108 0.076)"
+								fill="none"
+								stroke="#161615"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="0.885"
+							/>
+							<line
+								x2="37.429"
+								transform="translate(0.733 11.816)"
+								fill="none"
+								stroke="#161615"
+								stroke-linecap="round"
+								stroke-miterlimit="10"
+								stroke-width="0.885"
+							/>
+						</g>
+					</svg>
+					<span class="font-1"> Produtos / <em>Queijo Montanhês</em> </span>
+				</a>
+			</div>
 
-				<section class="products">
-					<div class="row">
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo mussarela</h3>
-							<img
-								src="./assets/img/produtos/mussarela.png"
-								alt="Queijo mussarela"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo prato</h3>
-							<img
-								id="prato"
-								src="./assets/img/produtos/prato.png"
-								alt="Queijo prato"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo provolone</h3>
-							<img
-								id="provolone"
-								src="./assets/img/produtos/provolone.png"
-								alt="Queijo provolone"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo parmesão</h3>
-							<img
-								id="parmesao"
-								src="./assets/img/produtos/parmesao.png"
-								alt="Queijo parmesão"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo montanhês</h3>
-							<img
-								id="montanhes"
-								src="./assets/img/produtos/montanhes.png"
-								alt="Queijo montanhês"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Queijo minas frescal</h3>
-							<img
-								id="minas"
-								src="./assets/img/produtos/minas.png"
-								alt="Queijo minas frescal"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Requeijão cremoso</h3>
-							<img
-								id="requeijao"
-								src="./assets/img/produtos/requeijao.png"
-								alt="Requeijão cremoso"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-						<div class="products__col col-sm-6">
-							<h3 class="product__title">Manteiga</h3>
-							<img
-								id="manteiga"
-								src="./assets/img/produtos/manteiga.png"
-								alt="Manteiga Extra"
-							/>
-							<a href="./produto.html" class="button">Ver produto</a>
-						</div>
-					</div>
-				</section>
-
-				<section class="contact">
-					<h2 class="title font-1">Quer ficar por dentro da trelac?</h2>
-					<h3 class="subtitle font-1">
-						Cadastre-se e receba em seu
-						<span class="text-nowrap">e-mail</span> todas as notícias.
+			<div class="product">
+				<div class="container overflow-hidden">
+					<img
+						class="product__image"
+						src="./assets/img/produtos/montanhes-detalhado.png"
+						alt="Queijo Montanhês"
+					/>
+					<h2 class="title">Queijo Montanhês</h2>
+					<h3 class="subtitle mx-auto">
+						O queijo montanhês passa por um processo especial de maturação
+						durante três meses para desenvolver um
 					</h3>
 
-					<form
-						class="mx-auto d-flex flex-column flex-md-row align-items-center align-items-md-end"
-					>
-						<div class="contact__input">
-							<input class="font-1" type="text" placeholder="Nome" />
-							<i class="far fa-user-circle"></i>
-						</div>
+					<div class="d-flex flex-column align-items-center">
+						<h2 class="info__title text-center text-uppercase">
+							Informações nutricionais
+						</h2>
+						<i class="info__icon fas fa-plus-circle"></i>
+					</div>
 
-						<div class="contact__input">
-							<input class="font-1" type="email" placeholder="E-mail" />
-							<i class="far fa-envelope"></i>
-						</div>
+					<div class="info">
+						<div class="row gy-4">
+							<div class="col-12 col-lg-7 col-xl-6">
+								<h2 class="title">Tabela Nutricional</h2>
+								<h3 class="subtitle">Porção de 30 g (1 fatia)</h3>
 
-						<button type="submit" class="button ms-auto">Enviar</button>
-					</form>
-				</section>
+								<div class="info__table">
+									<div class="row">
+										<div class="col col-6"></div>
+										<div class="col col-4">Quant. por</div>
+										<div class="col col-2">% VD</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Valor energético</div>
+										<div class="col col-4">104 kcal = 437</div>
+										<div class="col col-2">5%</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Carboidratos</div>
+										<div class="col col-4">kJ</div>
+										<div class="col col-2">0%</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Proteínas</div>
+										<div class="col col-4">0g</div>
+										<div class="col col-2">10%</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Gorduras totais</div>
+										<div class="col col-4">7,3g</div>
+										<div class="col col-2">15%</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Gorduras saturadas</div>
+										<div class="col col-4">8,3g</div>
+										<div class="col col-2">25%</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Gorduras trans</div>
+										<div class="col col-4">5,6g</div>
+										<div class="col col-2">**</div>
+									</div>
+
+									<div class="row">
+										<div class="col col-6">Sódio</div>
+										<div class="col col-4">0g</div>
+										<div class="col col-2">11%</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-5 col-xl-6">
+								<div class="ingredients">
+									<h2 class="title">Ingredientes</h2>
+									<h3 class="subtitle text-uppercase">
+										Leite Pasteurizado, Cloreto de Sódio (Sal), Fermento
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<section class="recipes position-relative">
+				<header class="recipes-header px-2 px-lg-3">
+					<h2 class="title">#Eu mesmo faço</h2>
+					<h2 class="subtitle font-1">
+						Experimente nossas sugestões
+						<br />
+						e deixe suas receitas ainda mais deliciosas
+					</h2>
+				</header>
+
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="./assets/img/index/macarrao-com-cheese@2x.png"
+								/>
+								<img
+									src="./assets/img/index/macarrao-com-cheese.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">Macarrão com 4 cheese</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="
+										./assets/img/index/macarrao-espinafre-queijo-montanhes@2x.png
+									"
+								/>
+								<img
+									src="./assets/img/index/macarrao-espinafre-queijo-montanhes.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">
+								Macarrão com espinafre e queijo montanhês
+							</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="./assets/img/index/macarrao-com-cheese@2x.png"
+								/>
+								<img
+									src="./assets/img/index/macarrao-com-cheese.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">Macarrão com 4 cheese</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="
+										./assets/img/index/macarrao-espinafre-queijo-montanhes@2x.png
+									"
+								/>
+								<img
+									src="./assets/img/index/macarrao-espinafre-queijo-montanhes.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">
+								Macarrão com espinafre e queijo montanhês
+							</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="./assets/img/index/macarrao-com-cheese@2x.png"
+								/>
+								<img
+									src="./assets/img/index/macarrao-com-cheese.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">Macarrão com 4 cheese</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source
+									media="(min-width: 576px)"
+									srcset="
+										./assets/img/index/macarrao-espinafre-queijo-montanhes@2x.png
+									"
+								/>
+								<img
+									src="./assets/img/index/macarrao-espinafre-queijo-montanhes.png"
+									class="img-fluid"
+								/>
+							</picture>
+							<h4 class="recipes__title font-1">
+								Macarrão com espinafre e queijo montanhês
+							</h4>
+							<a href="#" class="button">Saiba mais</a>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- Add Arrows -->
+					<div class="container p-0 m-0">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer font-1">
@@ -372,5 +517,6 @@
 		</footer>
 
 		<script src="./assets/js/navbar.js"></script>
+		<script src="./assets/js/swiper.js"></script>
 	</body>
 </html>

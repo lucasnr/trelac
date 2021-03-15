@@ -74,7 +74,7 @@ main .container {
 .arrow-back {
 	color: #272324 !important;
 	display: flex;
-	font-size: 1.0625rem;
+	font-size: 0.875rem;
 	font-weight: 500;
 	height: 1.5rem;
 	letter-spacing: 0.09375rem;
@@ -83,7 +83,7 @@ main .container {
 
 .arrow-back svg {
 	height: 100%;
-	margin-right: 1rem;
+	margin-right: 0.5rem;
 }
 
 .half {
@@ -93,6 +93,14 @@ main .container {
 @media (min-width: 576px) {
 	.title {
 		font-size: 2.8125rem;
+	}
+
+	.arrow-back {
+		font-size: 1.0625rem;
+	}
+
+	.arrow-back svg {
+		margin-right: 1rem;
 	}
 }
 

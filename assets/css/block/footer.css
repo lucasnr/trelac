@@ -21,6 +21,7 @@
 	transform: translateY(-50%);
 	height: auto;
 	width: 10.375rem;
+	z-index: 25;
 }
 
 .footer .footer__social .footer__social__title {
