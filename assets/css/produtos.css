@@ -9,6 +9,7 @@ main {
 .products .products__col {
 	align-items: center;
 	border: 0.0625rem solid rgba(0, 0, 0, 0.25);
+	color: inherit;
 	display: flex;
 	flex-direction: column;
 	height: 28.375rem;
@@ -16,6 +17,20 @@ main {
 	padding-bottom: 1.75rem;
 	padding-top: 2.875rem;
 	position: relative;
+	text-decoration: none;
+}
+
+.products .products__col::after {
+	color: transparent;
+	content: '\f067';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 7.5rem;
+	display: block;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .products img {
@@ -39,8 +54,18 @@ main {
 	background-color: #808080;
 }
 
-.products .button:hover {
-	background-color: #606060;
+.products .products__col:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.products .products__col:hover .button {
+	background-color: #fff;
+	color: #131313;
+}
+
+.products .products__col:hover::after{
+	color: #fff;
 }
 
 #prato {
