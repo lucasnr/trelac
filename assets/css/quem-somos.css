@@ -2,8 +2,8 @@ main {
 	padding-top: 2rem;
 }
 
-main .title {
-	margin-bottom: 0;
+main .container {
+	max-width: 81.125rem !important;
 }
 
 main section {
@@ -46,10 +46,6 @@ main section p strong {
 }
 
 @media (min-width: 576px) {
-	main .title {
-		margin-bottom: 2.5rem;
-	}
-
 	.seal {
 		width: 9rem;
 	}
@@ -58,6 +54,13 @@ main section p strong {
 @media (min-width: 768px) {
 	main {
 		padding-bottom: 8rem;
+	}
+
+	main .arrow-back {
+		left: 0px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	main .half:nth-of-type(even) p {
@@ -83,10 +86,6 @@ main section p strong {
 }
 
 @media (min-width: 992px) {
-	main .title {
-		margin-bottom: 8.125rem;
-	}
-
 	main .half:nth-of-type(even) p {
 		margin-left: 6.125rem;
 	}
