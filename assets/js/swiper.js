@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container", {
+let config = {
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -7,5 +7,14 @@ const swiper = new Swiper(".swiper-container", {
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
+	},
+};
+
+new Swiper(".swiper-container", config);
+new Swiper(".banner .swiper-container", {
+	...config,
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
 	},
 });

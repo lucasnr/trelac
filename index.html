@@ -83,28 +83,22 @@
 				<i class="fas fa-bars"></i>
 			</button>
 
-			<picture class="banner__picture">
-				<source
-					media="(min-width: 992px)"
-					srcset="./assets/img/index/queijo-mussarela@2x.png"
-				/>
-				<source
-					media="(min-width: 576px)"
-					srcset="./assets/img/index/queijo-mussarela-sem-folha@2x.png"
-				/>
-				<img
-					src="./assets/img/index/queijo-mussarela-sem-folha.png"
-					alt="Queijo mussarela"
-					class="img-fluid"
-				/>
-			</picture>
+			<!-- Swiper -->
+			<div class="swiper-container w-100">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./assets/img/banners/home.png" class="img-fluid" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/img/banners/mix.png" class="img-fluid" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
 
-			<div
-				class="banner__content mt-5 mt-lg-auto px-3 d-flex flex-column align-items-center"
-			>
-				<h2 class="title">Feito com leite de qualidade</h2>
-				<h3 class="subtitle">Fresquinho e saboroso</h3>
-				<a href="#" class="button">Saiba mais</a>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		</header>
 
@@ -671,7 +665,7 @@
 			</nav>
 		</footer>
 
-		<script src="./assets/js/swiper.js"></script>
 		<script src="./assets/js/navbar.js"></script>
+		<script src="./assets/js/swiper.js"></script>
 	</body>
 </html>
