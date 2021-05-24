@@ -20,20 +20,16 @@ main section img {
 
 main section p {
 	color: #5a5959;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: 300;
-	line-height: 2;
-	margin-bottom: 0px;
-	padding: 0px 1rem;
-	text-align: justify;
-}
-
-main section p + p {
-	margin-top: 2.5rem;
+	line-height: 2.375rem;
+	margin: auto 0px;
+	padding: 1.5rem 1rem;
 }
 
 main section p strong {
 	font-weight: 600;
+	line-height: 2.5rem;
 }
 
 .seal {
@@ -60,18 +56,20 @@ main section p strong {
 		padding-bottom: 8rem;
 	}
 
+	main section p {
+		max-width: 33.5rem;
+		padding: 1rem;
+	}
+
 	main .half:nth-of-type(even) p {
 		margin-left: 3rem;
 		margin-right: auto;
-		max-width: 31rem;
 		text-align: right;
 	}
 
 	main .half:nth-of-type(odd) p {
 		margin-right: 3rem;
 		margin-left: auto;
-		max-width: 34.625rem;
-		text-align: left;
 	}
 
 	.seal {
@@ -102,10 +100,15 @@ main section p strong {
 
 @media (min-width: 1200px) {
 	main section p {
-		font-size: 1.125rem;
+		font-size: 1.75rem;
+		line-height: 3rem;
+	}
+
+	main section p strong {
+		line-height: 3.75rem;
 	}
 
 	.seal {
-		width: 17.875rem;
+		width: 18.375rem;
 	}
 }
