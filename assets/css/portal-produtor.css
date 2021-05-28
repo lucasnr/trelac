@@ -1,0 +1,257 @@
+body {
+	overflow-x: hidden;
+}
+
+main {
+	padding-bottom: 4.375rem;
+	padding-top: 2.5rem;
+}
+
+main .container {
+	max-width: 85.375rem;
+}
+
+#cards .rounded-card {
+	background-color: #fff;
+	border-radius: 0.625rem;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 2rem;
+	min-height: 15.5rem;
+}
+
+#cards .title {
+	font-size: 2rem;
+}
+
+#cards p {
+	color: #535353;
+	font-size: 0.75rem;
+}
+
+#news article img {
+	border-radius: 0.75rem;
+	width: 100%;
+}
+
+#news article .title {
+	color: #38916e;
+	font-size: 1.375rem;
+	text-align: left;
+	text-transform: none;
+}
+
+#news p:not(#news article p) {
+	font-size: 1rem;
+	line-height: 1.25;
+}
+
+#news article a {
+	color: #535353;
+	font-size: 1rem;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#form {
+	box-shadow: 0px 0.1875rem 1.125rem rgb(0, 83, 93, 0.37);
+}
+
+#form .title {
+	font-size: 1.375rem;
+}
+
+#form .form-control {
+	border: 0.0625rem solid #599d7b;
+	border-radius: 0.625rem;
+	box-shadow: none;
+	height: auto;
+	padding: 1rem 1.25rem;
+}
+
+#form .form-control::placeholder {
+	color: rgba(106, 106, 106, 0.5);
+	font-style: italic;
+}
+
+#form .btn {
+	background-color: #03353b;
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.875rem 3rem;
+	text-transform: uppercase;
+}
+
+#form a {
+	color: #6a6a6a;
+	font-size: 0.875rem;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#cards .rounded-card.video {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+#cards .rounded-card.video .play-button {
+	background-color: transparent;
+	background-image: url(../img/portal-produtor/play-button.png);
+	background-size: cover;
+	background-position: center;
+	border: none;
+	cursor: pointer;
+	height: 56px;
+	position: relative;
+	transition: opacity 0.3s ease;
+	width: 80px;
+	z-index: 10;
+}
+
+#cards .rounded-card.video .play-button:hover,
+#cards .rounded-card.video .play-button:focus {
+	opacity: 0.7;
+}
+
+#cards .rounded-card.video img {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+#benefits {
+	background-image: url(../img/portal-produtor/benefits.png);
+	background-position: center left;
+	background-size: cover;
+	margin: 3.5rem 0px;
+}
+
+#benefits #benefits-content {
+	background-color: #033b3c;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	position: relative;
+}
+
+#benefits .title span {
+	color: #fff5aa;
+	font-size: 1rem;
+	text-transform: none;
+}
+
+#benefits .title strong {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+#benefits a {
+	background-color: #fff;
+	border-radius: 0.375rem;
+	color: #033b3c;
+	font-size: 0.875rem;
+	font-weight: 700;
+	left: 50%;
+	padding: 0.5rem 1.5rem;
+	position: absolute;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 100%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+#cards #contact {
+	box-shadow: 0px 0.1875rem 0.375rem rgba(0, 0, 0, 0.16);
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 3.875rem;
+	min-height: 0px !important;
+	padding-bottom: 1.25rem;
+	padding-top: 1.25rem;
+}
+
+#contact #whatsapp {
+	color: #0e8800;
+	font-size: 2rem;
+}
+
+#contact #whatsapp i {
+	font-size: 4.0625rem;
+	margin-right: 1.75rem;
+}
+
+#addresses address {
+	color: #5e5e5e;
+	margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+	#benefits {
+		min-height: 20rem !important;
+		padding: 1rem !important;
+	}
+
+	#benefits .title {
+		font-weight: 600;
+		line-height: 0.75;
+	}
+}
+
+@media (min-width: 992px) {
+	.arrow-back {
+		position: absolute;
+		bottom: 50%;
+		transform: translateY(-50%);
+	}
+
+	#news p:not(#news article p) {
+		font-size: 1.25rem;
+		line-height: 1;
+	}
+
+	#benefits #benefits-content {
+		margin-right: 1rem;
+		padding: 1.125rem 3rem;
+	}
+
+	#benefits .title span {
+		font-size: 2.75rem;
+		letter-spacing: -1px;
+	}
+
+	#benefits .title strong {
+		font-size: 3.125rem;
+		letter-spacing: 0.125rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	#benefits {
+		margin-bottom: 5.625rem;
+		margin-top: 5.625rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	#cards .rounded-card {
+		padding: 2rem 3rem;
+	}
+
+	#form a {
+		font-size: 1rem;
+	}
+
+	#benefits #benefits-content {
+		margin-right: 13.25rem;
+	}
+}
