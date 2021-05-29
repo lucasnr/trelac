@@ -12,15 +12,11 @@
 }
 
 .custom-navbar .custom-navbar__logo {
-	left: 2.25rem;
+	left: 1.25rem;
 	position: absolute;
 	top: -4.125rem;
 	width: 8.875rem;
 	z-index: 10;
-}
-
-.custom-navbar .custom-navbar__nav {
-	max-width: 68.5rem;
 }
 
 .custom-navbar .custom-navbar__nav li {
@@ -55,6 +51,10 @@
 .custom-navbar .custom-navbar__nav li a:hover::after,
 .custom-navbar .custom-navbar__nav li a:focus::after {
 	transform: scaleX(1);
+}
+
+.custom-navbar .custom-navbar__nav li a i {
+	font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -111,7 +111,13 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
+	.custom-navbar .custom-navbar__logo {
+		left: 2.25rem;
+	}
+}
+
+@media (min-width: 1400px) {
 	.custom-navbar .custom-navbar__nav li a {
 		padding-left: 2rem;
 		padding-right: 2rem;
