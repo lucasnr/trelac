@@ -1,3 +1,23 @@
+#user-controls a {
+	letter-spacing: 0px;
+	padding-right: 0px;
+}
+
+#user-controls #logout {
+	color: #6e6e6e;
+	padding-left: 0.875rem;
+	padding-right: 0.875rem;
+	text-decoration: underline !important;
+}
+
+#user-controls #logout i {
+	font-size: 0.875rem;
+}
+
+#user-controls #logout::after {
+	content: none;
+}
+
 #greetings > .title {
 	border-bottom: 0.0625rem solid #f0d12f;
 	border-top: 0.0625rem solid #f0d12f;

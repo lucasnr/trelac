@@ -44,7 +44,7 @@
 
 				<div class="container d-flex justify-content-end">
 					<ul
-						class="custom-navbar__nav list-unstyled mb-0 w-100 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-around justify-content-lg-between"
+						class="custom-navbar__nav list-unstyled mb-0 w-100 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-around"
 					>
 						<li class="d-lg-none">
 							<a href="./index.html">Início</a>
@@ -62,10 +62,23 @@
 							<a href="./contato.html">Fale conosco</a>
 						</li>
 						<li>
-							<a href="./portal-produtor.html">Portal do produtor</a>
+							<a href="./portal-produtor.html">
+								Portal
+								<span class="d-md-none d-xl-inline">do produtor</span>
+							</a>
 						</li>
-						<li>
-							<a href="./conta.html">Acessar minha conta</a>
+						<li id="user-controls">
+							<a href="./conta.html">
+								<span class="d-md-none d-xl-inline">
+									<span class="text-capitalize">Olá,</span>
+									Jair Costa da Silva
+								</span>
+								<span class="d-none d-md-inline d-xl-none"> conta </span>
+							</a>
+							<a href="./portal-produtor.html" id="logout">
+								Sair
+								<i class="fas fa-sign-out-alt"></i>
+							</a>
 						</li>
 					</ul>
 				</div>
