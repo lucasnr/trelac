@@ -27,6 +27,7 @@
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
 		<link rel="stylesheet" href="./assets/css/block/social-nav.css" />
 		<link rel="stylesheet" href="./assets/css/portal.css" />
+		<link rel="stylesheet" href="./assets/css/conta.css" />
 	</head>
 	<body>
 		<header
@@ -109,129 +110,88 @@
 					<h2 class="title mt-4 mt-lg-0">Portal do Produtor</h2>
 				</div>
 
-				<section id="cards">
-					<div class="row g-3 g-xxl-5">
-						<div class="col-lg-7 col-xl-8">
-							<div class="rounded-card" id="news">
-								<h2 class="title text-start mb-4 pb-2">
-									<span class="fw-light text-capitalize">últimas</span>
-									<span class="text-uppercase">Notícias</span>
-								</h2>
-
-								<div class="row g-4">
-									<div class="col-sm-6 col-md-5">
-										<article class="article">
-											<img
-												src="./assets/img/portal/dia-internacional-da-mulher.png"
-												alt="Dia Internacional da Mulher"
-												class="img-fluid"
-											/>
-											<h3 class="title font-1 mt-3 mb-1">
-												Dia Internacional da Mulher
-											</h3>
-											<p class="mb-3">
-												A gente sabe quem está com a gente. No trabalho do dia a
-												dia, nos momentos festivos e em cada fase da
-											</p>
-											<a href="#" class="text-end d-block">
-												<u class="pe-2">Ver mais</u>
-												<i class="fas fa-arrow-right"></i>
-											</a>
-										</article>
-									</div>
-									<div class="col-sm-6 col-md-7 ps-md-5 ps-lg-3 ps-xl-5">
-										<p class="fw-bold">
-											Cultivar a parceria com os produtores é fundamental. Com a
-											consultoria técnica, suporte e monitoramento cada visita
-											técnica
-										</p>
-										<hr />
-										<p class="fw-bold">
-											Cultivar a parceria com os produtores é fundamental. Com a
-											consultoria técnica, suporte e monitoramento cada visita
-											técnica
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-5 col-xl-4">
-							<div class="rounded-card" id="form">
-								<div class="col-sm-8 col-md-6 col-lg-12 px-0 mx-auto">
-									<h2 class="title mb-4">Acesse a sua conta</h2>
-									<p class="mb-4 pb-2">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua.
-									</p>
-
-									<form class="h-100 d-flex flex-column">
-										<input
-											type="text"
-											placeholder="CPF:"
-											name="cpf"
-											class="form-control"
-										/>
-										<input
-											type="password"
-											placeholder="Senha:"
-											name="password"
-											class="form-control mt-3"
-										/>
-
-										<div
-											class="d-flex flex-column-reverse flex-sm-row align-items-center justify-content-end mt-4 mt-sm-5"
-										>
-											<a href="#" class="mt-4 mt-sm-0 me-sm-3"
-												>Esqueci minha senha</a
-											>
-											<button type="submit" class="btn">Entrar</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<h2 class="title text-start mt-5 pt-2 mb-4">
-						<span class="fw-light text-capitalize">últimos</span>
-						<span class="text-uppercase">Vídeos</span>
+				<section id="greetings" class="d-flex flex-column align-items-start">
+					<h2 class="title mb-5 text-start">
+						Bem vindo
+						<strong class="text-uppercase fw-bold d-block d-sm-inline">
+							Jair Costa da Silva
+						</strong>
 					</h2>
 
-					<div class="row g-3 g-xl-5">
-						<div class="col-md-4">
-							<div class="rounded-card video">
-								<img src="./assets/img/portal/video-1.png" alt="Vídeo" />
-								<button class="play-button"></button>
-							</div>
+					<nav class="row w-100 mb-5 pb-3 g-3 g-md-4 mx-0">
+						<div class="col-sm-6 col-md-3">
+							<a href="#" class="rounded-card active">
+								<h3 class="title">Demonstrativos</h3>
+							</a>
 						</div>
-						<div class="col-md-4">
-							<div class="rounded-card video">
-								<img src="./assets/img/portal/video-2.png" alt="Vídeo" />
-								<button class="play-button"></button>
-							</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="#" class="rounded-card">
+								<h3 class="title">Nota Fiscal</h3>
+							</a>
 						</div>
-						<div class="col-md-4">
-							<div class="rounded-card video">
-								<img src="./assets/img/portal/video-1.png" alt="Vídeo" />
-								<button class="play-button"></button>
-							</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="#" class="rounded-card">
+								<h3 class="title">
+									<span class="text-nowrap d-block"> Informe de </span>
+									Rendimentos
+								</h3>
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="#" class="rounded-card">
+								<h3 class="title">Alterar Senha</h3>
+							</a>
+						</div>
+					</nav>
+				</section>
+
+				<section class="custom-table">
+					<header>Demonstrativos de entregas e pagamento</header>
+
+					<div class="custom-table__row">
+						<div class="text-uppercase">
+							<span>Janeiro</span>
+						</div>
+						<div class="text-center">
+							<span>2021</span>
+						</div>
+						<div class="text-end">
+							<a href="#" target="_blank">
+								<img src="./assets/img/conta/doc.svg" alt="Document icon" />
+							</a>
 						</div>
 					</div>
 
-					<div id="benefits" class="rounded-card">
-						<div
-							id="benefits-content"
-							class="d-inline-flex flex-column ms-auto mt-auto mb-3 my-sm-0"
-						>
-							<h2 class="title text-sm-start mb-4 pb-2">
-								<span class="d-block">Saiba as vantagens de ser um</span>
-								<strong>produtor integrado</strong>
-							</h2>
-							<a href="#">Seja um produtor Trelac</a>
+					<div class="custom-table__row">
+						<div class="text-uppercase">
+							<span>Fevereiro</span>
+						</div>
+						<div class="text-center">
+							<span>2021</span>
+						</div>
+						<div class="text-end">
+							<a href="#" target="_blank">
+								<img src="./assets/img/conta/doc.svg" alt="Document icon" />
+							</a>
 						</div>
 					</div>
 
+					<div class="custom-table__row">
+						<div class="text-uppercase">
+							<span>Março</span>
+						</div>
+						<div class="text-center">
+							<span>2021</span>
+						</div>
+						<div class="text-end">
+							<a href="#" target="_blank">
+								<img src="./assets/img/conta/doc.svg" alt="Document icon" />
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section id="cards">
 					<div id="contact" class="rounded-card font-1">
 						<div class="row g-4 align-items-center">
 							<div class="col-lg-6 text-center">

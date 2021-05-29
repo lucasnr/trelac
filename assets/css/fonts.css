@@ -28,6 +28,13 @@
 
 @font-face {
 	font-family: "GoldplayAlt";
+	src: url(../font/Goldplay-Alt/GoldplayAlt-Light.otf) format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GoldplayAlt";
 	src: url(../font/Goldplay-Alt/GoldplayAlt-Regular.otf) format("opentype");
 	font-weight: 400;
 	font-style: normal;

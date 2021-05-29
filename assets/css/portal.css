@@ -1,5 +1,10 @@
-body {
+body,
+html {
 	overflow-x: hidden;
+}
+
+.banner {
+	margin-top: -15vw;
 }
 
 main {
@@ -11,7 +16,7 @@ main .container {
 	max-width: 85.375rem;
 }
 
-#cards .rounded-card {
+.rounded-card {
 	background-color: #fff;
 	border-radius: 0.625rem;
 	display: flex;
@@ -101,7 +106,7 @@ main .container {
 
 #cards .rounded-card.video .play-button {
 	background-color: transparent;
-	background-image: url(../img/portal-produtor/play-button.png);
+	background-image: url(../img/portal/play-button.png);
 	background-size: cover;
 	background-position: center;
 	border: none;
@@ -129,7 +134,7 @@ main .container {
 }
 
 #benefits {
-	background-image: url(../img/portal-produtor/benefits.png);
+	background-image: url(../img/portal/benefits.png);
 	background-position: center left;
 	background-size: cover;
 	margin: 3.5rem 0px;
@@ -223,7 +228,17 @@ main .container {
 	}
 }
 
+@media (min-width: 768px) {
+	.banner {
+		margin-top: 0px;
+	}
+}
+
 @media (min-width: 992px) {
+	.banner {
+		height: 30.5rem;
+	}
+
 	.arrow-back {
 		position: absolute;
 		bottom: 50%;
@@ -259,7 +274,7 @@ main .container {
 }
 
 @media (min-width: 1400px) {
-	#cards .rounded-card {
+	.rounded-card {
 		padding: 2rem 3rem;
 	}
 
